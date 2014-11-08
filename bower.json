@@ -1,0 +1,14 @@
+{
+  "name": "html5-integrations",
+  "description": "Manage third party app integrations",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SocietyPro/html5-integrations.git"
+  },
+  "dependencies": {
+    "roboto": "https://github.com/sopro-components/roboto.git#0.1.0",
+    "angular-material": "angular/bower-material#0.5.1"
+  },
+  "devDependencies": {}
+}

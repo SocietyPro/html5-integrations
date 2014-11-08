@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Integrations-->
+<html>
+  <head>
+    <title>Integrations</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/roboto/2014/roboto-woff.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/themes/deep-purple-theme.css">
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript" src="bower_components/hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="assets/integrationsApp.js"></script>
+  </head>
+  <body md-theme="deep-purple" layout="vertical" ng-app="integrationsModule">
+    <nav layout="horizontal" layout-align="space-around">
+      <div flex="33" offset="33">Integrations</div>
+      <div flex="33">
+      <md-text-float ng-controller="APIEndpointController">
+      </md-text-float>
+      </div>
+    </nav>
+    <md-content>
+      <section id="test-api" flex>
+        <a ng-click="$api('api.test')">Click to test API connection</a>
+        <div class="result"></div>
+      </section>
+    </md-content>
+  </body>
+</html>
